@@ -46,7 +46,7 @@ fun CollegeScheduleApp() {
         mutableStateOf(AppDestinations.HOME) }
     val retrofit = remember {
         Retrofit.Builder()
-            .baseUrl("http://10.0.2.2:5268/") // localhost для Android Emulator
+            .baseUrl("http://10.0.2.2:5071/") // localhost для Android Emulator
             .addConverterFactory(GsonConverterFactory.create())
             .build()
     }
